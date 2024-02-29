@@ -22,7 +22,7 @@ env: ENV["GENIE_ENV"]
 
 dev:
   adapter: SQLite
-  database: db/books.sqlite
+  database: db/chat.sqlite
   config:
 ```
 
@@ -84,4 +84,10 @@ Using the model:
 using Messages
 m = Message(lang = "en", content = "Hello there!")
 save(m)
+```
+
+Test db:
+
+```julia
+SearchLight.query("SELECT * FROM messages")
 ```
