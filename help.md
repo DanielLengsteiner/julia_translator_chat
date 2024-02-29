@@ -1,5 +1,7 @@
 # Help
 
+## Database support for Genie app
+
 Required Packages:
 
 ```julia

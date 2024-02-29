@@ -1,6 +1,5 @@
 using Genie.Router
 
 route("/") do
-  "Servas!"
+  serve_static_file("welcome.html")
 end
-
