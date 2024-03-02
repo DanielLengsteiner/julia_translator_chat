@@ -9,8 +9,7 @@ Users can choose the language to which they want the entire chat to be translate
 
 ![architecture](img/julia-translator-chat-architecture.png)
 
-Users of a chat may want to communicate in their respective native languages. Their input is saved, translated to english as a transatory step and then saved
-to the PostgreSQL database.
+Users of a chat may want to communicate in their respective native languages. Their input is saved into a SQLite database with their own language to provide the best translation accuracy.
 
 The output is created by the application translating the english text back to the selected language of the user. User 1 will have their chat
 completely in German, while User 2 will have it in Spanish.

@@ -91,3 +91,29 @@ Test db:
 ```julia
 SearchLight.query("SELECT * FROM messages")
 ```
+
+## Starting the services
+
+To start an app after closing, type the following in the root folder of the app in the shell:
+
+```sh
+bin/repl
+```
+
+This will open the Julia REPL. To just start the server, do
+
+```sh
+bin/server
+```
+
+After that, in the REPL type
+
+```julia
+up()
+```
+
+To connect to the database again, just type the following in the Julia REPL in the root folder of the app:
+
+```julia
+SearchLight.Configuration.load() |> SearchLight.connect
+```
